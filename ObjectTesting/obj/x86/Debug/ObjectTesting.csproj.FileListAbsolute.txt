@@ -1,0 +1,6 @@
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\bin\x86\Debug\ObjectTesting.exe
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\bin\x86\Debug\ObjectTesting.pdb
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\ObjectTesting.exe
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\ObjectTesting.pdb
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\ObjectTesting.csprojResolveAssemblyReference.cache
