@@ -18,6 +18,12 @@ namespace ObjectTesting
         UserControlledSprite player; 
         List<Sprite> spriteList = new List<Sprite>();
 
+        UserControlledSprite playerWalking;
+        UserControlledSprite playerStanding;
+
+        Texture2D standingTexture;
+        Texture2D walkingTexture;
+
         public SpriteManager(Game game)
             : base(game)
         {
@@ -31,13 +37,32 @@ namespace ObjectTesting
         {
             spriteBatch = new SpriteBatch(Game.GraphicsDevice);
 
-            player = new UserControlledSprite(Game.Content.Load<Texture2D>("StandingTest"), Vector2.Zero , new Point(80, 80), 16, new Point(0, 0), new Point(1, 0), new Vector2(6, 6));
+            standingTexture = Game.Content.Load<Texture2D>("StandingTest");
+            walkingTexture = Game.Content.Load<Texture2D>("Walkingtest");
+
+            playerStanding = new UserControlledSprite(Game.Content.Load<Texture2D>("StandingTest"), Vector2.Zero, new Point(80, 80), 16, new Point(0, 0), new Point(1, 0), new Vector2(6, 6));
+            playerWalking = new UserControlledSprite(walkingTexture, Vector2.Zero, new Point(80, 80), 60, new Point(0, 0), new Point(4, 0), new Vector2(6, 6), 100);
 
             base.LoadContent();
         }
 
         public override void Update(GameTime gameTime)
         {
+            if (Keyboard.GetState().IsKeyUp(Keys.A) && Keyboard.GetState().IsKeyUp(Keys.D))
+            {
+                player = playerStanding;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                player = playerWalking;
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                player = playerWalking;
+            }
+
             player.Update(gameTime, Game.Window.ClientBounds);
 
             base.Update(gameTime);

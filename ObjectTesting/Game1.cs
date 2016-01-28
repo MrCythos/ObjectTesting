@@ -18,10 +18,13 @@ namespace ObjectTesting
 
         SpriteManager spriteManager;
 
+        int gameSetFramerate = 17;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            TargetElapsedTime = new TimeSpan(0, 0, 0, 0, gameSetFramerate); 
         }
         protected override void Initialize()
         {

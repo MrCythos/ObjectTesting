@@ -10,6 +10,15 @@
       <Output>C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\bin\x86\Debug\Content\StandingTest.xnb</Output>
       <Time>2016-01-28T12:24:34.4488542-06:00</Time>
     </Item>
+    <Item>
+      <Source>Walkingtest.png</Source>
+      <Name>Walkingtest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\bin\x86\Debug\Content\Walkingtest.xnb</Output>
+      <Time>2016-01-28T12:53:09.2822062-06:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2705E0F7-6E1C-4ED0-BC87-03C18B8228F1}</ContentProjectGUID>

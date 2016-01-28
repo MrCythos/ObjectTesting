@@ -10,7 +10,7 @@ namespace ObjectTesting
 {
     class UserControlledSprite: Sprite //child class of sprite class, also, figure out how child class works
     {
-        MouseState prevMouseState; //grabs the position of the mouse
+        //MouseState prevMouseState; //grabs the position of the mouse
 
         public UserControlledSprite(Texture2D textureImage, Vector2 position, Point frameSize, int collisionOffset, Point currentFrame, Point sheetSize, Vector2 speed) 
             : base(textureImage, position, frameSize, collisionOffset, currentFrame, sheetSize, speed) 
@@ -56,13 +56,13 @@ namespace ObjectTesting
             position += direction;
 
             // If player moved the mouse, move the sprite    
-            MouseState currMouseState = Mouse.GetState();   
+            //MouseState currMouseState = Mouse.GetState();   
  
-            if (currMouseState.X != prevMouseState.X || currMouseState.Y != prevMouseState.Y)    
-            {
-                position = new Vector2(currMouseState.X, currMouseState.Y);    
-            }    
-            prevMouseState = currMouseState;
+            //if (currMouseState.X != prevMouseState.X || currMouseState.Y != prevMouseState.Y)    
+            //{
+            //    position = new Vector2(currMouseState.X, currMouseState.Y);    
+            //}    
+            //prevMouseState = currMouseState;
 
             // If sprite is off the screen, move it back within the game window    
             if (position.X < 0)        
