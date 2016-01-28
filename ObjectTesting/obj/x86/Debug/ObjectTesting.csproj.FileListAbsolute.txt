@@ -4,3 +4,4 @@ C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting
 C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\ObjectTesting.exe
 C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\ObjectTesting.pdb
 C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\obj\x86\Debug\ObjectTesting.csprojResolveAssemblyReference.cache
+C:\Users\Howard\Documents\XNA Projects\ObjectTesting\ObjectTesting\ObjectTesting\bin\x86\Debug\Content\StandingTest.xnb

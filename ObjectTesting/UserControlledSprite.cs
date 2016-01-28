@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace ObjectTesting
 {
-    class UserControlledSprite: Sprite //child class of sprite class
+    class UserControlledSprite: Sprite //child class of sprite class, also, figure out how child class works
     {
         MouseState prevMouseState; //grabs the position of the mouse
 

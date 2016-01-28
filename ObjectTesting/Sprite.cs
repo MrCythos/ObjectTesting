@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace ObjectTesting
 {
-    class Sprite
+    abstract class Sprite
     {
         Texture2D textureImage; 
         protected Point frameSize; 
@@ -19,12 +19,12 @@ namespace ObjectTesting
         const int defaultMillisecondsPerFrame = 16; 
         protected Vector2 speed; 
         protected Vector2 position;
-
+        //figure out what the heck ":" is supposed to do
         public Sprite(Texture2D textureImage, Vector2 position, Point frameSize, int collisionOffset, Point currentFrame, Point sheetSize, Vector2 speed)
             : this(textureImage, position, frameSize, collisionOffset, currentFrame, sheetSize, speed, defaultMillisecondsPerFrame)
         {
         }
-
+        //figure out how constructors work
         public Sprite(Texture2D textureImage, Vector2 position, Point frameSize, int collisionOffset, Point currentFrame, Point sheetSize, Vector2 speed, int millisecondsPerFrame) 
         { 
             this.textureImage = textureImage; 
@@ -37,7 +37,7 @@ namespace ObjectTesting
             this.millisecondsPerFrame = millisecondsPerFrame; 
         }
 
-        public virtual void Update(GameTime gameTime, Rectangle clientBounds) 
+        public virtual void Update(GameTime gameTime, Rectangle clientBounds)  //figure out what virtual does
         { 
             timeSinceLastFrame += gameTime.ElapsedGameTime.Milliseconds; 
             if (timeSinceLastFrame > millisecondsPerFrame) 
@@ -59,7 +59,7 @@ namespace ObjectTesting
         public abstract Vector2 direction 
         { 
             get; 
-        }
+        } 
         public Rectangle collisionRect 
         {
              get    
